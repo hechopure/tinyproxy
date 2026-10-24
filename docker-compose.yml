@@ -21,8 +21,8 @@ services:
       # ZONA HORARIA
       - TZ=America/Argentina/Buenos_Aires
 
-    dns:
-      - 192.168.200.201
+    #dns:
+    # - 192.168.200.201
 
     healthcheck:
       test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/8118'"]
