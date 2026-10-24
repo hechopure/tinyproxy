@@ -5,11 +5,11 @@ services:
     restart: unless-stopped
 
     ports:
-      - "8118:8118"
+      - "8888:8888"
 
     environment:
       # PUERTO
-      - PROXY_PORT=8118
+      - PROXY_PORT=8888
 
       # REDES PERMITIDAS (incluye localhost para healthcheck)
       - ALLOW_NETWORKS=10.0.0.0/8 172.16.0.0/12 192.168.0.0/16 192.168.200.0/24 127.0.0.0/8
