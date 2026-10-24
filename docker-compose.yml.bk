@@ -27,7 +27,7 @@ services:
     #  - 192.168.200.201
 
     healthcheck:
-      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/8118'"]
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/8888'"]
       interval: 30s
       timeout: 3s
       start_period: 5s
