@@ -16,7 +16,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN sed -i '1s/^\xEF\xBB\xBF//; s/\r$//' /etc/tinyproxy/tinyproxy.conf && \
     chmod +x /entrypoint.sh
 
-EXPOSE 8118
+EXPOSE 8888
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["tinyproxy", "-d", "-c", "/etc/tinyproxy/tinyproxy.conf"]
